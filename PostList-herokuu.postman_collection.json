@@ -1,0 +1,129 @@
+{
+	"info": {
+		"_postman_id": "43534caf-afb5-4818-befa-20a563ba99ae",
+		"name": "PostList-herokuu",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "取得所有貼文",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://powerful-retreat-15325.herokuapp.com/posts",
+					"protocol": "https",
+					"host": [
+						"powerful-retreat-15325",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "新增一筆貼文",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Chloe\",\r\n    \"image\":\"https://images.unsplash.com/photo-1651003502512-f79d29d50376?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80\",\r\n    \"content\":\"今天突然好想離職阿~~~~!!\",\r\n    \"likes\":666\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://powerful-retreat-15325.herokuapp.com/posts",
+					"protocol": "https",
+					"host": [
+						"powerful-retreat-15325",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "刪除所有貼文",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://powerful-retreat-15325.herokuapp.com/posts",
+					"protocol": "https",
+					"host": [
+						"powerful-retreat-15325",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "刪除一筆貼文",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://powerful-retreat-15325.herokuapp.com/posts/62695c36076c885ec5b5a9a9",
+					"protocol": "https",
+					"host": [
+						"powerful-retreat-15325",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"posts",
+						"62695c36076c885ec5b5a9a9"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "修改一筆貼文",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"我要改名\",\r\n    \"content\":\"你確定要離職嗎?\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://powerful-retreat-15325.herokuapp.com/posts/62695c54076c885ec5b5a9b2",
+					"protocol": "https",
+					"host": [
+						"powerful-retreat-15325",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"posts",
+						"62695c54076c885ec5b5a9b2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
