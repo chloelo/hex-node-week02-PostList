@@ -28,7 +28,8 @@ const requestListener = async (req, res) => {
           const newPost = await Post.create({
             name: data.name,
             image: data.image,
-            content: data.content
+            content: data.content,
+            likes:  data.likes
           })
           successHandle(res, newPost)
         } else {
